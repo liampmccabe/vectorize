@@ -1,0 +1,21 @@
+<script>
+  window.onmessage = async (event) => {
+    if (event.data.pluginMessage.type === 'networkRequest') {
+      const data = new FormData();
+      data.append("bitmap", new Blob([event.data.pluginMessage.imageData]), 'image.png');
+
+      const response = await fetch("https://bitmaptovector.com/upload", {
+        method: "POST",
+        body: data
+      });
+
+      const text = await response.text()
+
+      window.parent.postMessage({ 
+        pluginMessage: {
+          data: text
+        }
+      }, '*')
+    }
+  }
+  </script>

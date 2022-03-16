@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.42.1"
+  },
+  "dependencies": {
+    "imagetracerjs": "^1.2.6"
+  }
+}

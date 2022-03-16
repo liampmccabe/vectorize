@@ -1,0 +1,11 @@
+{
+  "name": "Vectorize",
+  "id": "1085676099704803176",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": [
+    "figma",
+    "figjam"
+  ],
+  "ui": "ui.html"
+}
